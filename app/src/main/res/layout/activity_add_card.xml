@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCardActivity">
+
+    <EditText
+        android:id="@+id/questionTextField"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:hint="Enter a question"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/answerTextField"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/saveBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-230dp"
+        android:hint="Enter an answer"
+        android:inputType="textMultiLine"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/myBtn"
+        android:layout_width="113dp"
+        android:layout_height="108dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="122dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:text="Save" />
+
+
+</RelativeLayout>
