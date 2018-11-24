@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.deleteBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                allFlashcards = flashcardDatabase.getAllCards();
                 flashcardDatabase.deleteCard(((TextView) findViewById(R.id.flashcard_question)).getText().toString());
                 if(allFlashcards.size() == 0){
                     ((TextView) findViewById(R.id.flashcard_question)).setText("No Cards availible to view \nSelect the icon below to create a new card");
