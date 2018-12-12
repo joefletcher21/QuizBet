@@ -8,6 +8,7 @@
 
     <TextView
         android:id="@+id/flashcard_question"
+        android:background="@color/turquoise"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="Which HBCU is known as the Mecca?"
