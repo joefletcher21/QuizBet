@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         // this method is called when the animation is finished playing
-                        findViewById(R.id.flashcard_question).startAnimation(rightInAnim);
                     }
 
                     @Override
